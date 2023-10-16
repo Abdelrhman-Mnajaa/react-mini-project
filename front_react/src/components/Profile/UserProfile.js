@@ -39,7 +39,7 @@ export default function Profile() {
   useEffect(() => {
     // Fetch user data
     axios
-      .post("http://localhost/React_project/back-end/profile/viewProfile.php", {
+      .post("http://localhost/login-react/back-end/profile/viewProfile.php", {
         id: localStorage.getItem("id"),
       })
       .then((response) => {
@@ -58,7 +58,7 @@ export default function Profile() {
 
     // Fetch order data
     axios
-      .post("http://localhost/React_project/back-end/profile/orders.php", {
+      .post("http://localhost/login-react/back-end/profile/orders.php", {
         id: localStorage.getItem("id"),
       })
       .then((response) => {
@@ -103,7 +103,7 @@ export default function Profile() {
     // Send updated user data to the server
     axios
       .post(
-        "http://localhost/React_project/back-end/profile/update.php",
+        "http://localhost/login-react/back-end/profile/update.php",
         updatedUser
       )
       .then((response) => {

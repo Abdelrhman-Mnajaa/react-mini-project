@@ -21,7 +21,7 @@ const Login = () => {
     e.preventDefault();
 
     try {
-      const url = 'http://localhost/React_project/back-end/login/login.php';
+      const url = 'http://localhost/login-react/back-end/login/login.php';
 
       const response = await axios.post(url, formData);
 

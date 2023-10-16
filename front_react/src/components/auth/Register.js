@@ -83,7 +83,7 @@ const Register = () => {
       // Form data is valid, proceed with submission
       console.log('Form Data:', formData);
 
-      const url = 'http://localhost/React_project/back-end/login/register.php';
+      const url = 'http://localhost/login-react/back-end/login/register.php';
 
       axios
         .post(url, formData)
